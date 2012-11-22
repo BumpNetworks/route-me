@@ -63,7 +63,8 @@
 
 -(void) dealloc
 {
-    for ( RMTileImage *image in tiles ) {
+    for ( RMTileImage *image in tiles )
+    {
         [image layer].delegate = nil;
     }
     layer.delegate = nil;
